@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateJWT continueOnError="false" enabled="true" name="JWT-Generate">
+  <DisplayName>JWT-Generate</DisplayName>
+  <Algorithm>RS256</Algorithm>
+  <PrivateKey>
+    <Value ref="private.private_key"/>
+  </PrivateKey>
+  <Subject ref="jwtParams.sub"/>
+  <Audience ref="jwtParams.aud"/>
+  <Issuer>https://34.8.189.89.nip.io/jwt-generate-token/token</Issuer>
+  <ExpiresIn>30m</ExpiresIn>
+  <AdditionalClaims>
+    <Claim name="scope" ref="jwtParams.scope"/>
+    <Claim name="custom_claim" ref="jwtParams.custom_claim"/>
+  </AdditionalClaims>
+  <OutputVariable>jwt_token</OutputVariable>
+</GenerateJWT>

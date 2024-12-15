@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-ExtractTokenParams">
+  <DisplayName>EV-ExtractTokenParams</DisplayName>
+  <FormParam name="subject">
+    <Pattern>{sub}</Pattern>
+  </FormParam>
+  <FormParam name="audience">
+    <Pattern>{aud}</Pattern>
+  </FormParam>
+  <FormParam name="scope">
+    <Pattern>{scope}</Pattern>
+  </FormParam>
+  <FormParam name="custom_claim">
+    <Pattern>{custom_claim}</Pattern>
+  </FormParam>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <Source clearPayload="false">request</Source>
+  <VariablePrefix>jwtParams</VariablePrefix>
+</ExtractVariables>

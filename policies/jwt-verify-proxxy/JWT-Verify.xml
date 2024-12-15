@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VerifyJWT continueOnError="false" enabled="true" name="JWT-Verify">
+  <DisplayName>JWT-Verify</DisplayName>
+  <Algorithm>RS256</Algorithm>
+  <Subject>tutkapaw</Subject>
+  <PublicKey>
+    <Value ref="public_key"/>
+  </PublicKey>
+  <Issuer>https://34.8.189.89.nip.io/jwt-generate-token/token</Issuer>
+  <Audience>developers</Audience>
+  <AdditionalClaims>
+    <Claim name="scope" type="string">tutkapaw:read</Claim>
+    <Claim name="custom_claim" type="string">example</Claim>
+  </AdditionalClaims>
+</VerifyJWT>
