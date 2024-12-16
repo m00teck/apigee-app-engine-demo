@@ -4,5 +4,5 @@
 ## Launch multipass with initial config
 
 ```shell
-multipass launch --name gcp-tools --cpus 2 --mem 4G --disk 20G --cloud-init ./utils/multipass/cloud-config.yaml
+multipass launch --name gcp-tools --cpus 2 --memory 4G --disk 20G --cloud-init ./utils/multipass/gcp-config.yaml
 ```
